@@ -1,32 +1,111 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# 🚀 Dev Stack Builder
 
-Currently, two official plugins are available:
+A modern and interactive React application that allows developers to explore popular technologies and build their own personalized technology stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+Coming Soon...
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Project Overview
 
-## Expanding the Oxlint configuration
+Dev Stack Builder helps developers discover popular development tools and select the technologies they want to use in their projects.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## ✨ Features
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Explore popular development technologies.
+- Browse technology cards with descriptions and images.
+- Add technologies to your personal stack.
+- Prevent duplicate technology selection.
+- Remove individual technologies.
+- Clear the entire stack.
+- Success and warning notifications.
+- Loading feedback when adding technologies.
+- Responsive design for desktop, tablet, and mobile.
+- Modern user interface.
+
+## 🛠️ Technologies Used
+
+- React
+- TypeScript
+- Vite
+- HTML5
+- CSS3
+- Lucide React
+- React Toastify
+
+## 📂 Project Structure
+
+```text
+dev-stack-builder/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── TechnologyCard.tsx
+│   │   ├── TechnologyList.tsx
+│   │   ├── StackSidebar.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── data/
+│   │   └── technologies.json
+│   │
+│   ├── types/
+│   │   └── technology.ts
+│   │
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/mbhnahid2024-dot/dev-stack-builder.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd dev-stack-builder
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+## 👨‍💻 Developer
+
+**Md Belal Hossain Nahid**
+
+- GitHub: [@mbhnahid2024-dot](https://github.com/mbhnahid2024-dot)
+
+## 📄 License
+
+This project is created for educational and learning purposes.

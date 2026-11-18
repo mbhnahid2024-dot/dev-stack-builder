@@ -1,30 +1,35 @@
 
-import { ArrowRight, Sparkles } from "lucide-react";
+import bannerStack from "../assets/banner-stack.png";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
+    <section className="hero-section" id="home">
       <div className="hero-content">
-        <div className="hero-badge">
-          <Sparkles size={16} />
-          <span>Build your perfect tech stack</span>
-        </div>
+        <span className="hero-tag">BUILD YOUR DEVELOPER JOURNEY</span>
 
         <h1>
-          Build Your Dream
-          <br />
-          <span>Developer Stack</span>
+          Build Your Perfect
+          <span> Developer Stack</span>
         </h1>
 
         <p>
-          Discover the best technologies, choose your favorite tools,
-          and create your own personalized developer stack.
+          Discover modern technologies, explore development tools,
+          and build your own personalized technology stack.
         </p>
 
-        <a href="#technologies" className="hero-button">
-          Explore Technologies
-          <ArrowRight size={18} />
-        </a>
+        <div className="hero-buttons">
+          <a href="#technologies" className="primary-button">
+            Explore Technologies
+          </a>
+
+          <a href="#projects" className="secondary-button">
+            View Projects
+          </a>
+        </div>
+      </div>
+
+      <div className="hero-image">
+        <img src={bannerStack} alt="DevStack technology banner" />
       </div>
     </section>
   );

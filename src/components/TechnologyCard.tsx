@@ -1,4 +1,6 @@
 
+import { useState } from "react";
+import { LoaderCircle } from "lucide-react";
 import type { Technology } from "../types/technology";
 
 interface TechnologyCardProps {
@@ -7,6 +9,20 @@ interface TechnologyCardProps {
 }
 
 function TechnologyCard({ technology, onAdd }: TechnologyCardProps) {
+  const [isAdding, setIsAdding] = useState(false);
+
+  const handleAdd = () => {
+    if (isAdding) return;
+
+    setIsAdding(true);
+
+    onAdd(technology);
+
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 600);
+  };
+
   return (
     <article className="technology-card">
       <div className="technology-image">
@@ -26,9 +42,17 @@ function TechnologyCard({ technology, onAdd }: TechnologyCardProps) {
 
       <button
         className="add-button"
-        onClick={() => onAdd(technology)}
+        onClick={handleAdd}
+        disabled={isAdding}
       >
-        + Add to Stack
+        {isAdding ? (
+          <>
+            <LoaderCircle size={17} className="loading-icon" />
+            Adding...
+          </>
+        ) : (
+          "+ Add to Stack"
+        )}
       </button>
     </article>
   );

@@ -1,28 +1,33 @@
 
-import { Code2 } from "lucide-react";
+import logoText from "../assets/logo-text.png";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="/" className="nav-logo">
-        <Code2 size={28} />
-        <span>DevStack</span>
+      {/* Logo */}
+      <a href="#home" className="nav-logo">
+        <img src={logoText} alt="DevStack Logo" />
       </a>
 
+      {/* Navigation links */}
       <div className="nav-links">
         <a href="#home">Home</a>
         <a href="#technologies">Technologies</a>
-        <a href="#my-stack">My Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
 
-    <a
-  href="https://github.com/mbhnahid2024-dot/dev-stack-builder"
-  target="_blank"
-  rel="noreferrer"
-  className="github-link"
->
-  <span>GitHub ↗</span>
-</a>
+      {/* Authentication buttons */}
+      <div className="nav-actions">
+        <button type="button" className="signin-button">
+          Sign In
+        </button>
+
+        <button type="button" className="signup-button">
+          Sign Up
+        </button>
+      </div>
     </nav>
   );
 }
