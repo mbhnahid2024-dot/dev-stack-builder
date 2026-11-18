@@ -34,17 +34,30 @@ function App() {
     toast.success(`${technology.name} added to your stack!`);
   };
 
-  // Remove technology from My Stack
-  const handleRemoveTechnology = (id: number) => {
-    setStack((previousStack) =>
-      previousStack.filter((technology) => technology.id !== id)
-    );
-  };
+  
+// Remove technology from My Stack
+const handleRemoveTechnology = (id: number) => {
+  const technologyToRemove = stack.find(
+    (technology) => technology.id === id
+  );
 
-  // Clear all technologies
-  const handleClearStack = () => {
-    setStack([]);
-  };
+  if (!technologyToRemove) return;
+
+  setStack((previousStack) =>
+    previousStack.filter((technology) => technology.id !== id)
+  );
+
+  toast.info(`${technologyToRemove.name} removed from your stack!`);
+};
+
+// Clear all technologies
+const handleClearStack = () => {
+  if (stack.length === 0) return;
+
+  setStack([]);
+  toast.success("Your stack has been cleared!");
+};
+
 
   return (
     <>

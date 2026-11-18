@@ -299,3 +299,149 @@
   }
 }
 
+
+.builder-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  align-items: start;
+  gap: 25px;
+  padding: 40px 8%;
+  background: #fafafa;
+}
+
+.builder-layout .technology-section {
+  padding: 0;
+  background: transparent;
+}
+
+.stack-sidebar {
+  position: sticky;
+  top: 20px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+}
+
+.stack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.stack-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.stack-header p {
+  margin: 7px 0 0;
+  color: #737373;
+  font-size: 12px;
+}
+
+.clear-button,
+.remove-button {
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button {
+  background: #fff0e9;
+  color: #ea580c;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.empty-stack {
+  padding: 30px 10px;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+.empty-stack h3 {
+  color: #404040;
+  font-size: 16px;
+}
+
+.empty-stack p {
+  font-size: 13px;
+}
+
+.stack-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.stack-item img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.stack-item-info {
+  flex: 1;
+}
+
+.stack-item-info h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.stack-item-info span {
+  color: #888888;
+  font-size: 12px;
+}
+
+.remove-button {
+  display: flex;
+  padding: 7px;
+  border-radius: 6px;
+  background: #fff0f0;
+  color: #dc2626;
+}
+
+@media (max-width: 1000px) {
+  .builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stack-sidebar {
+    position: static;
+  }
+}
+
+
+/* Part 8: Loading State */
+
+.add-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.loading-icon {
+  animation: loading-spin 1s linear infinite;
+}
+
+@keyframes loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
