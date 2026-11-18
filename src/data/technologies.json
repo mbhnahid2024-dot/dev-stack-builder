@@ -1,0 +1,87 @@
+
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building user interfaces.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "JavaScript with static type checking.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+  },
+  {
+    "id": 3,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime for server-side applications.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "id": 4,
+    "name": "Express.js",
+    "category": "Backend",
+    "description": "A lightweight web framework for Node.js.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+  },
+  {
+    "id": 5,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A NoSQL document-oriented database.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    "id": 6,
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for full-stack web applications.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "id": 7,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    "id": 8,
+    "name": "Python",
+    "category": "Language",
+    "description": "A versatile programming language.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+  },
+  {
+    "id": 9,
+    "name": "Firebase",
+    "category": "Backend",
+    "description": "A platform providing backend services for applications.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+  },
+  {
+    "id": 10,
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "An open-source relational database.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "id": 11,
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "A progressive JavaScript framework.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for building and running containers.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+  }
+]
